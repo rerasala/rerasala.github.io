@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="images/png" href="images/favicon.svg"/>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Nobile&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Projects - Rohan Erasala</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-011TLFCVZF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-011TLFCVZF');
+    </script>
+
+  </head>
+
+
+  <header>
+
+    <script src="js/script.js"></script>
+
+    <div class="skip"><a href="#skipto">Skip to Main Content</a></div>
+
+      <nav>
+        <a id = "logo" href = "index.html"> RE</a>
+        <div id="navElements">
+          <a class = "navLink" href = "index.html" onclick = "hideMenu()" >Home</a>
+          <a class = "navLink" href="about.html" onclick="hideMenu()" >About</a>
+          <a class = "navLink current" href="projects.html" onclick="hideMenu()">Projects</a>
+          <a class = "navLink" href="contact.html" onclick="hideMenu()">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="displayMenu()">
+          <img id = "button-icon" src="images/ci_hamburger.png" alt = "menu icon"></i>
+        </a>
+      </nav>
+
+
+      <div class = "project-header">
+        <h1>Wolverine Ticket Transfer</h1>
+        <h2>Buy Blue. Go Blue.</h2>
+      </div>
+    </div>
+  
+  </header>
+
+<body>
+
+  <main id = "skipto">
+
+    <section id = "white">
+
+      <div class="padding"></div>
+
+      <div class = "full-project">
+
+          <div class = "project-section">
+            <h3>Context</h3>
+            <p><strong>Class:</strong> ENTR 390</p>
+            <p><strong>Timeline:</strong> 4 weeks</p>
+            <p><strong>Role:</strong> Researcher, Designer</p>
+            <p><strong>Tools used:</strong> Balsamiq, Figma, Adobe Photoshop</p>
+            <p><strong>Skills:</strong> UX Research, Personas, Empathy Mapping, Wireframing, Prototyping</p>
+          </div>
+
+        <div class = "project-section">
+          <h3>The Problem</h3>
+          <p> On a fall saturday unlike any other, I found myself in an extremely stressful situation - I 
+            didn't have a ticket to tonight's Michigan football game. I had previously sold my ticket to my
+            friend as I didn't think I was going to be able to go, but at the last moment, my schedule 
+            cleared up. After scouring Facebook and getting scammed by a fake user I came to the conclusion:
+
+            <br>
+            <br>
+
+            <strong>Finding a ticket to Michigan football games as a Michigan student takes a lot of time, effort, and energy from the buyer and seller perspective.</strong></p>
+          </div>
+
+        <div class = "project-section">
+          <h3>Audience/Personas</h3>
+          <p>
+            
+            In order to determine who my audience was, I brainstormed potential users of the product based
+            on who would be able to relate to my problem statement. I brainstormed the following potential 
+            users of my application.
+
+            <br>
+            <br>
+
+            <ul class = "bulleted-list">
+            <li>Michigan students who like to sell their tickets</li>
+            <li>Michigan students who want to bring friends to the games</li>
+            <li>Michigan students who don’t know how to find student tickets</li> 
+            <li>Michigan students who need tickets at the last minute and need a convenient way to find tickets</li>
+            </ul>
+
+            <br>
+
+            <p>From there, I assigned my primary and 2 secondary personas. I thought that the 
+              buyer should be the primary persona because I believe the customer should always 
+              be at the heart of the product. I then assigned my secondary personas to be sellers
+              who are selling their tickets for different reasons.
+              <br>
+              <br>
+
+              For my primary persona, I created an empathy map to really ensure that I was understanding
+              the pain points.
+
+            </div>
+              
+              <div class="empathy-map-container">
+                <img id = "empathy-map" src="images/Empathy_Map.png" alt="Empathy Map">
+              </div>
+              
+              <div class="project-section">
+
+                <br>
+                <br>
+
+                <p>
+                  I then used this empathy map to help me with my primary persona, and then created my 
+                  two secondary personas.
+                  Emily Morris represents the primary persona and the "buyer" archetype. <br>
+                  Rashida Peterson and Josh Henderson represent secondary personas and the "seller" archetypes. <br> 
+                </p>
+
+              </div>
+                
+
+              
+
+            </p>
+
+          </p>
+
+        <div class = "persona-images">
+          <img id = "primary" src="images/Persona_1.png" alt="Primary Persona" class = "persona">
+          <img src="images/Persona_2.png" alt="Secondary Persona" class = "persona">
+          <img src="images/Persona_3.png" alt="Secondary Persona" class = "persona">
+        </div>
+
+        <br>
+        <br>
+
+        <div class="project-section">
+
+          <h3>Design Process</h3>
+  
+          <p>
+            After conducting my research, I settled on three outcomes I wanted my application to have. These included: <br><br>
+  
+            <ul class = "bulleted-list">
+              <li><strong>Reduce scams/fake ticket transfers,</strong> allow reporting and blocking of dishonest users</li>
+              <li>Allow users to easily <strong>find tickets</strong> to all games that they want to go to</li>
+              <li>Create platform where users can easily <strong>keep track of all ticket related conversations</strong></li> 
+            </ul>
+  
+            <br>
+            <br>
+  
+            <p>Therefore, I knew my app needed the following key functions: <br><br></p>
+  
+            <ul class = "bulleted-list">
+              <li>A home screen where you can easily find tickets</li>
+              <li>The ability to report and block dishonest users</li>
+              <li>A way to message other users safely and securely to conduct transations</li>
+              <li>Allow users to post tickets to sell</li>  
+            </ul>
+  
+            <br>
+            <br>
+  
+          </p>
+  
+          <p>
+            I started out by sketching my ideas and created a low fidelity version of what I wanted my user flow to be (seen below). <br><br>
+          </p>
+
+          <img src="images/arch-diagram.png" alt="Architechture diagram">
+  
+          <br>
+          <br>
+          <p>
+            I then developed my wireframes in Balsamiq. Below are my wireframes for two key actions - communicating
+            with the seller and posting a ticket. <br><br>
+          </p>
+  
+          <p>
+            <strong>Communicating with the seller</strong>
+          </p>
+  
+          <div class="key-action">
+            <img class = "action-step" src="images/Communicate_with_seller-1.png" alt="Communicating with the seller - step 1">
+            <img class = "action-step" src="images/Communicate_with_seller-2.png" alt="Communicating with the seller - step 2">
+            <img class = "action-step" src="images/Communicate_with_seller-3.png" alt="Communicating with the seller - step 3">
+          </div>
+  
+          <p>
+            <strong>Posting a ticket</strong>
+          </p>
+  
+          <div class="key-action">
+            <img class = "action-step" src="images/Post_Ticket-1.png" alt="Posting a ticket - step 1">
+            <img class = "action-step" src="images/Post_Ticket-2.png" alt="Posting a ticket - step 2">
+            <img class = "action-step" src="images/Post_Ticket-3.png" alt="Posting a ticket - step 3">
+          </div>
+  
+          <p>
+            I then moved into creating high-fidelity versions of these designs which can be seen below.
+          </p>
+    
+          <div class="key-action">
+            <img class = "action-step" src="images/Home_Screen_original.png" alt="First home screen">
+            <img class = "action-step" src="images/post_ticket_original.png" alt="Posting a ticket">
+            <img class = "action-step" src="images/messaging_original.png" alt="Messaging a seller">
+          </div>
+  
+          <br>
+          <br>
+  
+          <p>
+            However, after receving feedback from my peers and instructors, I decided I really didn't like how my application looked at all.
+            People thought the home screen had way too many tickets on it, and the app really did not have the polish that I wanted it to. I decided to
+            rethink how I displayed tickets and create a new color scheme for the application altogether. <br><br>
+          </p>
+  
+        </div>
+  
+        <div class="project-section">
+          <h3>Iteration</h3>
+  
+          <p>
+            After further iteration, I met with my instructors and my peers to discuss some two key questions that I had:
+  
+            <br>
+            <br>
+            
+            <ul class = "bulleted-list">
+              <li>Does my user flow make sense?</li>
+              <li>Are the elements of the application readable?</li>
+            </ul>
+  
+            <br>
+  
+            <p>
+              I ended up making two critical changes based on this feedback. <br><br>
+            </p>
+  
+            <p><strong>Change 1: Showing the current page</strong></p>
+  
+            <div class="key-action">
+  
+              <div class="picture-with-label">
+                <img class = "action-step" src="images/Sell_Ticket_Old.png" alt="First home screen">
+                <p>Old version</p>
+              </div>
+  
+              <div class="picture-with-label">
+                <img class = "action-step" src="images/Sell_Ticket_New.png" alt="First home screen">
+                <p>New version</p>
+              </div>
+  
+            </div>
+  
+            <p>
+              <br>
+              <br>
+  
+              Previously, my application did not display the current page if you opened the menu from the bottom. This
+              was a concern as it could potentially throw off the flow of the user and it does not provide the user with
+              enough knowledge when they need to navigate to another page. I added a stroke around the current page in the 
+              menu so that users could use this as a visual indication of where they are in the application at the moment.
+              <br>
+              <br>
+            </p>
+  
+            <p><strong>Change 2: Reformating the tickets screen</strong></p>
+  
+            <div class="key-action">
+  
+              <div class="picture-with-label">
+                <img class = "action-step" src="images/My Tickets - OLD.png" alt="First home screen">
+                <p>Old version</p>
+              </div>
+  
+              <div class="picture-with-label">
+                <img class = "action-step" src="images/My Tickets - Blocked Andrew.png" alt="First home screen">
+                <p>New version</p>
+              </div>
+  
+            </div>
+  
+            <p>
+              <br>
+              <br>
+
+              My old tickets page utilized a small arrow to show whether you were selling or buying a ticket.
+              Not only was this feature not clear to users (they did not know what the arrows meant), but it was an accessibility issue as it was not very large 
+              and could've been hard to see by users with worse vision. To mitigate this, I created two explicit labels that 
+              clearly defined what tickets users were buying and selling. I also seperated the two groups of tickets from each other. I decided to keep the arrows 
+              on the tickets to reinforce the idea that the ticket was being sold and going "outward" or being bought and coming "inward". 
+  
+              
+            </p>
+  
+        </div>
+
+        <div class="project-section">
+
+          <h3>Final Iteration</h3>
+
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width = "100%" height  = "600px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FbJwyP1ZD5JnMx4Ovjrga6m%2FENTR390-DP1-Proto%3Fpage-id%3D0%253A1%26node-id%3D19%253A1020%26viewport%3D241%252C48%252C0.02%26scaling%3Dscale-down%26starting-point-node-id%3D19%253A1020" allowfullscreen></iframe>
+
+          <a target = "_blank" href="https://www.figma.com/proto/bJwyP1ZD5JnMx4Ovjrga6m/ENTR390-DP1-Proto?page-id=0%3A1&node-id=0%3A1&viewport=241%2C48%2C0.02&scaling=scale-down&starting-point-node-id=278%3A1238">If the embedded figma file doesn't work, please use this link</a>
+        </div>
+
+        <div class="project-section">
+          <h3>Rationale</h3>
+
+          <p>
+
+            I believe that I have created the best solution to my problem that finding and selling a Michigan football ticket requires a lot of effort from the buyer and 
+            seller perspective. This is because my solution makes it faster to find the ticket while the user completes the transation through a third party.
+
+            <br>
+            <br>
+
+            I was asked many times - wouldn't this application be better if you could just pay for the ticket in the application? My answer is a resounding <strong>no</strong>. <br><br>
+
+            The goal of my application was to completely streamline the process of finding tickets to Michigan Football games, as 
+            the current solutions that exist include combing through various groupchats and GroupMes, and selling tickets on less-than-trustworthy websites. Websites 
+            where you can sell your tickets are not used by many people because people want credibility with services that handle financial transations - credibility that would be hard to establish 
+            in a brand new application.
+            I wanted to create an application that users could trust, and this meant NOT handling financial data and instead simply providing a platform for users to 
+            find the tickets and the sellers/buyers they want. The ability to block and report users also ensure that this trust is kept while using the application.
+
+            <br>
+            <br>
+
+
+            I was influenced by a number of different ticket applications including stubhub, seatgeek, and ticketmaster when I was creating this application. As established
+            ticket selling giants, their user interfaces were inspirations to the way I displayed by tickets to my users. In addition, I used Apple fonts such as SF Pro and SF Pro Compact
+            throughout the application because I felt that they gave a very polished look to the application that I was missing when I was using
+            other fonts. 
+
+          </p>
+
+        </div>
+
+        <div class="project-section">
+
+          <h3>User Feedback</h3>
+
+          <p>
+            After receiving feedback from my instructors and peers, I can say with confidence that I achieved my goal of creating a 
+            less painful and time-consuming way to find tickets to Michigan football games. Although there were a few errors and improvements I could make 
+            to the interface, most people that I asked really resonated with the problem and saw this solution as one that addressed it well. As mentioned, a lot of 
+            people expected to be able to pay for their tickets directly on the application. After explaining why I excluded the feature, they understood. 
+            
+            <br>
+            <br>
+
+            Many people mentioned that my application essentially abstracted out the search process when looking for tickets and got them straight to the bartering/messaging phase. This was a great comment to hear
+            as it was what I believed to be the biggest bottleneck in the ticket process.
+
+          </p>
+
+        </div>
+
+        <div class="project-section">
+
+          <h3>Next Steps</h3>
+
+          <p>
+            My instructors were able to provide me with great feedback regarding what to improve about my application. They mentioned inconsistencies with the design language in my application
+            (i.e "View Tickets" tab led to the home screen) and pointed out that the hamburger menu I use implies that the menu will swipe in from the right, when in reality, it comes from the bottom. They also
+            mentioned areas where the readability of my application could have been improved by increasing font sizes and whitespace. 
+
+            <br>
+            <br>
+
+            I made sure to take these lessons with me into my next project in ENTR 390, and I hope to do even better on that project.
+
+            <br>
+            <br>
+
+            In terms of expansion, I would love to add features to use this application to buy basketball and hockey tickets. These tickets are also transferrable and 
+            sought after, and therefore require work to find if you do not have season tickets.
+          </p>
+
+        </div>
+
+
+      </div>
+
+      
+
+      
+
+
+        
+
+    </section>
+
+
+  </main>
+
+
+
+  <footer>
+    <p class = "footer-logo">RE</p> 
+    <div class = "sm-links">
+      <a href="https://www.instagram.com/rohan_erasala/" target="_blank">
+        <img class = "sm-icon" src="images/instagram.svg" alt="instagram">
+      </a>
+  
+      <a href="https://www.twitter.com/RErasala/" target="_blank">
+        <img class = "sm-icon" src="images/twitter.svg" alt="twitter">
+      </a>
+
+      <a href="https://www.linkedin.com/in/rohan-erasala-807bb5169/" target="_blank">
+        <img class = "sm-icon" src="images/linkedin.svg" alt="LinkedIn">
+      </a>
+
+    </div>
+  </footer>
+  
+  
+</body>
+
+</html>
+
+
