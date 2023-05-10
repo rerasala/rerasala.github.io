@@ -1,173 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="images/png" href="images/favicon.svg"/>
-    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Nobile&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Home - Rohan Erasala</title>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-011TLFCVZF"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-011TLFCVZF');
-      </script>
-
-  </head>
-
-
-<header>
-
-  <script src="js/script.js"></script>
-  <script src = "js/typewriter.js"></script>
-
-  <div class="skip"><a href="#skipto">Skip to Main Content</a></div>
-
-  <nav>
-    <a id = "logo" href = "index.html"> RE</a>
-    <div id="navElements">
-      <a class = "navLink current" href = "index.html" onclick = "hideMenu()" >Home</a>
-      <a class = "navLink" href="about.html" onclick="hideMenu()" >About</a>
-      <a class = "navLink" href="projects.html" onclick="hideMenu()">Projects</a>
-      <a class = "navLink" href="contact.html" onclick="hideMenu()">Contact</a>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="displayMenu()">
-      <img id = "button-icon" src="images/ci_hamburger.png" alt = "menu icon"></i>
-    </a>
-  </nav>
-
-</header>
-
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Rohan's Portfolio</title>
+</head>
 <body>
-  
-  <main id = "home-box">
 
-    <canvas id="canvas-basic"></canvas>
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.js"></script>
-      <script>
-
-        //cut and paste
-        //I changed the colors, the direction of the animation, and the styling to fit my website
-        var granimInstance = new Granim({
-            element: '#canvas-basic',
-            direction: 'diagonal',
-            isPausedWhenNotInView: false,
-            states : {
-                "default-state": {
-                    gradients: [
-                        ['#3C99DC', '#66D3FA'],
-                        ['#d5f3de', '#2565ae'],
-                        ['#0F5298', '#3C99DC']
-                    ]
-                }
-            }
-          });
-
-      </script>
-
-    <div class="header-box">
-    
-      <div class = "intro-text">
-        <h1 id = "title">H</h1>
-        <h2>I’m a designer, developer, engineer, guitarist, and more!</h2>
-        <div class = "button-container">
-          <a class = "resume-btn" href="Files/resume_design.pdf" target="_blank">View My Resume</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="skills-box" id = "skipto">
-      <h3>Here's a little bit of what I can do</h3>
-
-      <div class="icon-box">
-        <img class = "resume-icon" src="images/html.svg" alt="html">
-        <img class = "resume-icon" src="images/css.svg" alt="css">
-        <img class = "resume-icon" src="images/python.svg" alt="python">
-        <img class = "resume-icon" src="images/cpp.svg" alt="cpp">
-        <img class = "resume-icon" src="images/figma.svg" alt="figma">
-        <img class = "resume-icon" src="images/adobe.svg" alt="adobe">
-      </div>
-    </div>
-
-    
-    <section id = "white">
-
-      <div class="recent-work">
-        <div class="padding"></div>
-        <h3>and what I'm doing with them...</h2>
-
-        <div class="recent-project">
-          <h3>Design Project: RainCheck</h3>
-  
-          <div class="recent-text">
-            <img class = "recent-icon" src="images/raincheck.png" alt="RainCheck logo">
-  
-            <p>RainCheck is a project I'm currently working on in my Digital Product Design Class. RainCheck is a concept application that 
-              will be created in Figma, using Balsamiq for high-fidelity wireframing. Ultiimately, RainCheck will be an
-              application that will help users decide what accesories or outerwear they will need in order to
-              combat incliment weather around them. An intuitive, clean interface, and calendar integration will hopefully
-              make umbrella the weather app for busy people.
-            </p>
-          </div>
-  
-        </div>
+    <section id="landing-page">
+        <div class = header-container>
+            <div class = "navbar">
+                <a href="./files/resume_52023.pdf" target="_blank">Resume</a>
+                <a href="https://www.linkedin.com/in/rohan-erasala/" target="_blank">LinkedIn</a>
+            </div>
         
-        <div class="recent-project">
-          <h3>Design Project: KTP Rush Web App</h3>
-  
-          <div class="recent-text">
-            <img class = "recent-icon" src="images/ktp_logo.png" alt="RainCheck logo">
-  
-            <p> KTP is the professional technology fraternity that I am a part of. An important aspect of being a brother in 
-              KTP is playing a part in the "rush" process every year that brings in more applicants to KTP. 
-              On one night called "Decision Night", brothers must evaluate 40 rushees and select the top candidates
-              to be a part of KTP. In order to view all of the vital information concerning interview scores, 
-              application essays, etc., KTP has decided to make a web app that allows brothers to easily view
-              all of this information on decision night. As head of the KTP design commitee, I am currently leading a 
-              team of 10 members to design this rush application.
-            </p>
-          </div>
-  
+            <div class = "speech-bubble">
+                <img id = "speech-bubble-img" src="./images/SpeechBubble.png" alt="Hello!">
+            </div>
+        
+            <div class = "header-description">
+                <p>I'm Rohan! <br></p>
+                <p>
+                    I'm an engineer <br>
+                    designer <br>
+                    guitarist <br>
+                    and more!
+                </p>
+                
+            </div>
         </div>
-  
-      </div>
-
-      <div class="padding"></div>
-
     </section>
 
-  </main>
+    <section id = "about-section">
+        <div class="about-container">
+            <h2>
+                <i> Here's what I've done ... </i>
+            </h2>
+            <div class="container">
+                <ul class="cards">
+                    <li class="card">
+                        <div>
+                          <h3 class="card-title">Student @ <span class = "link" id="maize-blue-gradient"><a href="https://umich.edu" target="_blank">Umich</a></span> COE</span></h3>
+                          <div class="card-content">
+                            <p>
+                                Sep 2019 - May 2023
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                  <li class="card">
+                    <div>
+                      <h3 class="card-title">SDE Intern @ <span class = "link" id="orange-gradient"><a href="https://amazon.com" target="_blank">Amazon</a></span></h3>
+                      <div class="card-content">
+                        <p>
+                            May 2022 - Aug 2022
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div>
+                      <h3 class="card-title">VP Pro Dev @ <span class = "link" id="blue-gradient"><a href="https://ktpmichigan.com" target="_blank">KTP</a></span></h3>
+                      <div class="card-content">
+                        <p>
+                            Dec 2021 - Dec 2022
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div>
+                      <h3 class="card-title">SWE Intern @ <span class = "link" id="blue-white-gradient"><a href="https://ford.com" target="_blank">Ford</a></span></h3>
+                      <div class="card-content">
+                        <p>
+                            May 2021 - Aug 2021
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- <li class="card">
+                    <div>
+                      <h3 class="card-title">Service 4</h3>
+                      <div class="card-content">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div>
+                      <h3 class="card-title">Service 5</h3>
+                      <div class="card-content">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div>
+                      <h3 class="card-title">Service 6</h3>
+                      <div class="card-content">
+                      </div>
+                    </div>
+                  </li> -->
+                </ul>
+              </div>
+        </div>
+    </section>
 
-  <footer>
-    <p class = "footer-logo">RE</p> 
-    <div class = "sm-links">
-      <a href="https://www.instagram.com/rohan_erasala/" target="_blank">
-        <img class = "sm-icon" src="images/instagram.svg" alt="instagram">
-      </a>
-  
-      <a href="https://www.twitter.com/RErasala/" target="_blank">
-        <img class = "sm-icon" src="images/twitter.svg" alt="twitter">
-      </a>
+    <section class="projects-section">
+        <h2>
+            <i> What I've Created ... </i>
+        </h2>
 
+        <div class="projects-container">
+            <div class="project" id = "raincheck">
+                <img src="./images/raincheck.png" alt="raincheck logo">
+                <div class = "project-description">
+                    <h3>
+                        Raincheck
+                    </h3>
+                    <p>
+                        A weather app designed to help users stay cozy!
+                    </p>
+                </div>
+            </div>
+    
+            <div class="project" id = "video-game-recommender">
+                <img src="./images/vgr.png" alt="video game controller">
+                <div class = "project-description">
+                    <h3>
+                        Video game Recommender
+                    </h3>
+                    <p>
+                        A content-based filtering recommender system for video games!
+                    </p>
+                </div>
+            </div>
+    
+            <div class="project" id = "stock-predictions">
+                <img src="./images/stock.png" alt="stock goes up">
+                <div class = "project-description">
+                    <h3>
+                        Stock Predictions
+                    </h3>
+                    <p>
+                        An analysis tool for thousands of stocks using machine learning!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <a href="https://www.twitter.com/RErasala/" target="_blank">
-        <img class = "sm-icon" src="images/linkedin.svg" alt="LinkedIn">
-      </a>
-
-    </div>
-  </footer>
-  
+    <section class="other-section">
+        <div class = "other-container">
+            <h2>
+                And other stuff I want to do!
+            </h2>
+            <div class = "list-items">
+                <ul>
+                    <li>Experiment with sports analytics models</li>
+                    <li>Watch the NBA playoffs</li>
+                    <li>Play GOW: Ragnarok</li>
+                    <li>Explore NYC!</li>
+                </ul>
+            </div>
+        </div>
+    </section>    
+    
 </body>
 
+<footer>
+    Feel free to contact me at rerasala@gmail.com!
+</footer>
 </html>

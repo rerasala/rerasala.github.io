@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rohan's Portfolio</title>
+
+    <script src="./cloud.js"></script>
+
+<script>
+
+function init() {
+    var w = Math.max(window.innerWidth, document.body.clientWidth), h = Math.max(window.innerHeight, document.body.clientHeight);
+    var clouder = document.getElementById('clouder');
+    clouder.style.width = asPixels(w * 1 / 3);
+    clouder.style.height = asPixels(h * 1 / 3);
+    clouder.style.position = "relative";
+    
+    window.clouder = new Clouder({
+        container: clouder,
+        tags: createTags()
+    });
+} // init
+
+function createTags() {
+    var elems = [];
+    elems.push({text: "SWE intern", id: "500", weight: 1.0});
+    elems.push({text: "SWE intern", id: "600", weight: 1.0});
+    elems.push({text: "Played in a band", id: "700", weight: 1.0});
+    elems.push({text: "umich alumni", id: "800", weight: 1.0});
+    elems.push({text: "vp pro dev", id: "900", weight: 1.0});
+    return elems;
+} // createTags
+
+</script>
+</head>
+<body onLoad="init();">
+
+    <section id="landing-page">
+        <div class = header-container>
+            <div class = "navbar">
+                <a href="#">Resume</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        
+            <div class = "speech-bubble">
+                <img id = "speech-bubble-img" src="./SpeechBubble.png" alt="Hello!">
+            </div>
+        
+            <div class = "header-description">
+                <p>I'm Rohan! <br></p>
+                <p>
+                    I'm an engineer <br>
+                    designer <br>
+                    guitarist <br>
+                    and more!
+                </p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id = "about-section">
+        <div class="about-container">
+            <h2>
+                <i> Here's what I've done ... </i>
+            </h2>
+    
+            <!-- <div class="container">
+                <img class="image" src="./SpeechBubble.png" alt="Your Image">
+                <div class="caption">
+                  <div class="caption-item caption-item-1">
+                    <p>Caption Item 1</p>
+                  </div>
+                  <div class="caption-item caption-item-2">
+                    <p>Caption Item 2</p>
+                  </div>
+                  <div class="caption-item caption-item-3">
+                    <p>Caption Item 3</p>
+                  </div>
+                  <div class="caption-item caption-item-4">
+                    <p>Caption Item 4</p>
+                  </div>
+                </div>
+              </div> -->
+    
+              <div onLoad="init();" id="clouder">
+                <!-- <img id="centerImage" src="/headshot.png" alt="Center Image"> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <h2>
+            <i> What I've Created ... </i>
+        </h2>
+
+        <div class="projects-container">
+            <div class="project" id = "raincheck">
+                <img src="./raincheck.png" alt="raincheck logo">
+                <div class = "project-description">
+                    <h3>
+                        Raincheck
+                    </h3>
+                    <p>
+                        A weather app designed to help users stay cozy!
+                    </p>
+                </div>
+            </div>
+    
+            <div class="project" id = "video-game-recommender">
+                <img src="./vgr.png" alt="video game controller">
+                <div class = "project-description">
+                    <h3>
+                        Video game Recommender
+                    </h3>
+                    <p>
+                        A content-based filtering recommender system for video games!
+                    </p>
+                </div>
+            </div>
+    
+            <div class="project" id = "stock-predictions">
+                <img src="./stock.png" alt="stock goes up">
+                <div class = "project-description">
+                    <h3>
+                        Stock Predictions
+                    </h3>
+                    <p>
+                        An analysis tool for thousands of stocks using machine learning!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="other-section">
+        <div class = "other-container">
+            <h2>
+                And other stuff I want to do!
+            </h2>
+            <div class = "list-items">
+                <ul>
+                    <li>Experiment with sports analytics models</li>
+                    <li>Watch the NBA playoffs</li>
+                    <li>Play GOW: Ragnarok</li>
+                    <li>Explore NYC!</li>
+                </ul>
+            </div>
+        </div>
+    </section>    
+    
+</body>
+
+<footer>
+    feel free to contact me at rerasala@gmail.com!
+</footer>
+</html>
